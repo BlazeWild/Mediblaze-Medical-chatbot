@@ -69,6 +69,17 @@ body::-webkit-scrollbar-track {
   font-size: 1.25rem;
 }
 
+/* Brand logo styling */
+.brand-logo {
+  object-fit: contain;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.brand-logo:hover {
+  transform: scale(1.05);
+}
+
 /* Cards - remove chat card styling */
 .chat-card {
   background-color: transparent;
