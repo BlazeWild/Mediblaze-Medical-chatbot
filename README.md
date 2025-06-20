@@ -40,9 +40,26 @@ MediBlaze is an intelligent AI-powered medical assistant that provides comprehen
 
 ## 🚀 Quick Start
 
+### 🐳 Docker Hub (Recommended)
+
+The easiest way to run MediBlaze is using our pre-built Docker image:
+
+```bash
+# Pull the latest image from Docker Hub
+docker pull blazewild215/mediblaze:latest
+
+# Run with environment variables
+docker run -p 8000:8000 \
+  -e GOOGLE_API_KEY=your_google_api_key \
+  -e PINECONE_API_KEY=your_pinecone_api_key \
+  blazewild215/mediblaze:latest
+```
+
+**Access the application at:** `http://localhost:8000`
+
 ### Prerequisites
 
-- Python 3.8+
+- Docker installed on your system
 - Google AI API Key
 - Pinecone API Key
 
